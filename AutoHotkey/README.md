@@ -6,12 +6,13 @@
 | CapsLock + { u, o }              | { Home, End }                    |
 | CapsLock + { y, h }              | { PageUp, PageDown }             |
 
-Use ALT key to simulate CTRL, for example:
+Pay attention that this script swap `Alt` and `Ctrl` key, for example:
 
 | Shortcut                         | Output                           |
 | -------------------------------- | -------------------------------- |
-| CapsLock + ALT + { l }           | { Ctrl } + { Right }             |
-| CapsLock + SHIFT + ALT + { l }   | { Shift } + { Ctrl } + { Right } |
+| `CapsLock` + `Alt` + `L`               | `Ctrl` + `→`                     |
+| `CapsLock` + `Shift` + `Alt` + `L`       | `Shift` + `Ctrl` + `→`           |
+| `CapsLock` + `Ctrl` + `L`              | `Alt` + `→`                      |
 
 ## How to
 

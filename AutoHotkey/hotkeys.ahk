@@ -5,9 +5,13 @@
 | CAPSLOCK + { u, o }              | { Home, End }                    |
 | CAPSLOCK + { y, h }              | { PageUp, PageDown }             |
 
-Use ALT key to simulate CTRL, for example:
-| CAPSLOCK + ALT + { l }           | { Ctrl } + { Right }             |
-| CAPSLOCK + SHIFT + ALT + { l }   | { Shift } + { Ctrl } + { Right } |
+Pay attention that this script swap `Alt` and `Ctrl` key, for example:
+
+| Shortcut                         | Output                           |
+| -------------------------------- | -------------------------------- |
+| CapsLock + Alt + L               | Ctrl + Right                     |
+| CapsLock + Shift + Alt + L       | Shift + Ctrl + Right             |
+| CapsLock + Ctrl + L              | Alt + Right                      |
 */
 
 #NoTrayIcon
