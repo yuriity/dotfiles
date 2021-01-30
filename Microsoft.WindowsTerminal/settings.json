@@ -36,9 +36,9 @@
         "hidden": false,
         "name": "PowerShell",
         "source": "Windows.Terminal.PowershellCore",
-        "colorScheme" : "One Half Dark",
+        "colorScheme": "AdventureTime",
         "fontSize": 10,
-        "fontFace": "JetBrains Mono",
+        "fontFace": "Cascadia Code PL",
         "acrylicOpacity": 0.8,
         "useAcrylic": true
       },
@@ -57,6 +57,7 @@
   },
 
   // Add custom color schemes to this array
+  // More themes at - windowsterminalthemes.dev
   "schemes": [
     {
       // Color Scheme: Ubuntu
@@ -81,6 +82,69 @@
       "brightRed": "#EF2929",
       "brightWhite": "#EEEEEE",
       "brightYellow": "#FCE94F"
+    },
+    {
+      "name": "AdventureTime",
+      "black": "#050404",
+      "red": "#bd0013",
+      "green": "#4ab118",
+      "yellow": "#e7741e",
+      "blue": "#0f4ac6",
+      "purple": "#665993",
+      "cyan": "#70a598",
+      "white": "#f8dcc0",
+      "brightBlack": "#4e7cbf",
+      "brightRed": "#fc5f5a",
+      "brightGreen": "#9eff6e",
+      "brightYellow": "#efc11a",
+      "brightBlue": "#1997c6",
+      "brightPurple": "#9b5953",
+      "brightCyan": "#c8faf4",
+      "brightWhite": "#f6f5fb",
+      "background": "#1f1d45",
+      "foreground": "#f8dcc0"
+    },
+    {
+      "name": "Breeze",
+      "black": "#31363b",
+      "red": "#ed1515",
+      "green": "#11d116",
+      "yellow": "#f67400",
+      "blue": "#1d99f3",
+      "purple": "#9b59b6",
+      "cyan": "#1abc9c",
+      "white": "#eff0f1",
+      "brightBlack": "#7f8c8d",
+      "brightRed": "#c0392b",
+      "brightGreen": "#1cdc9a",
+      "brightYellow": "#fdbc4b",
+      "brightBlue": "#3daee9",
+      "brightPurple": "#8e44ad",
+      "brightCyan": "#16a085",
+      "brightWhite": "#fcfcfc",
+      "background": "#31363b",
+      "foreground": "#eff0f1"
+    },
+    {
+      "name": "Calamity",
+      "black": "#2f2833",
+      "red": "#fc644d",
+      "green": "#a5f69c",
+      "yellow": "#e9d7a5",
+      "blue": "#3b79c7",
+      "purple": "#f92672",
+      "cyan": "#74d3de",
+      "white": "#d5ced9",
+      "brightBlack": "#7e6c88",
+      "brightRed": "#fc644d",
+      "brightGreen": "#a5f69c",
+      "brightYellow": "#e9d7a5",
+      "brightBlue": "#3b79c7",
+      "brightPurple": "#f92672",
+      "brightCyan": "#74d3de",
+      "brightWhite": "#ffffff",
+      "background": "#2f2833",
+      "foreground": "#d5ced9"
     }
   ],
 
@@ -90,7 +154,16 @@
     // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
     // These two lines additionally bind them to Ctrl+C and Ctrl+V.
     // To learn more about selection, visit https://aka.ms/terminal-selection
-    { "command": { "action": "copy", "singleLine": false }, "keys": "ctrl+c" },
-    { "command": "paste", "keys": "ctrl+v" }
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
+    }
   ]
 }
