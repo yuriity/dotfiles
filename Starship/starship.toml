@@ -1,11 +1,8 @@
-
-#  
-
 format = """
 [](#9A348E)\
 $os\
 $username\
-[](bg:#DA627D fg:#9A348E)\
+[](bg:#DA627D fg:#9A348E)\
 $directory\
 [](fg:#DA627D bg:#FCA17D)\
 $git_branch\
@@ -38,7 +35,11 @@ disabled = true
 # represents the current operating system
 [os]
 style = "bg:#9A348E"
-disabled = true # Disabled by default
+disabled = false # Disabled by default
+
+[os.symbols]
+Macos = " "
+Windows = " "
 
 [directory]
 style = "bg:#DA627D"
@@ -49,15 +50,15 @@ truncation_symbol = "…/"
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
-"Documents" = " "
+"Documents" = " "
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
 # Keep in mind that the order matters. For example:
-# "Important Documents" = "  "
+# "Important Documents" = "  "
 # will not be replaced, because "Documents" was already substituted before.
 # So either put "Important Documents" before "Documents" or use the substituted version:
-# "Important  " = "  "
+# "Important  " = "  "
 
 [docker_context]
 symbol = " "
@@ -68,10 +69,45 @@ format = '[ $symbol $context ]($style) $path'
 symbol = ""
 style = "bg:#FCA17D"
 format = '[ $symbol $branch ]($style)'
+truncation_length = 35
+truncation_symbol = "…/"
+
+# [git_branch]
+# symbol = " "
+# format = "on [$symbol$branch]($style) "
+# truncation_length = 30
+# truncation_symbol = "…/"
+# style = "bold green"
 
 [git_status]
 style = "bg:#FCA17D"
 format = '[$all_status$ahead_behind ]($style)'
+conflicted = "[](bg:#FCA17D fg:160)"
+# up_to_date = " "
+# untracked = " "
+ahead = "⇡${count}"
+# diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+# stashed = " "
+modified = "[](bg:#FCA17D fg:160)"
+staged = '[++\($count\)](bg:#FCA17D fg:040)'
+# renamed = " "
+# deleted = " "
+
+# [git_status]
+# format = '[\($all_status$ahead_behind\)]($style) '
+# style = "green"
+# conflicted = " "
+# up_to_date = " "
+# untracked = " "
+# ahead = "⇡${count}"
+# diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+# behind = "⇣${count}"
+# stashed = " "
+# modified = " "
+# staged = '[++\($count\)](green)'
+# renamed = " "
+# deleted = " "
 
 [golang]
 symbol = " "
