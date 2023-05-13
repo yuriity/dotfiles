@@ -8,6 +8,7 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:#FCA17D bg:#86BBD8)\
+$dotnet\
 $golang\
 $java\
 $nodejs\
@@ -16,11 +17,16 @@ $rust\
 $docker_context\
 [](fg:#06969A bg:#33658A)\
 $time\
-[ ](fg:#33658A)\
-"""
+[ ](fg:#33658A)\
+$all[╰─](#9A348E)$character"""
+
+# Change the default prompt characters
+[character]
+success_symbol = "[❯](#9A348E)"
+error_symbol = "[❯](238)"
 
 # Disable the blank line at the start of the prompt
-# add_newline = false
+# add_newline = true
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
@@ -108,6 +114,11 @@ staged = '[++\($count\)](bg:#FCA17D fg:040)'
 # staged = '[++\($count\)](green)'
 # renamed = " "
 # deleted = " "
+
+[dotnet]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
 
 [golang]
 symbol = " "
