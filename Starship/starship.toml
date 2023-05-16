@@ -1,3 +1,5 @@
+# https://starship.rs/config/#prompt
+
 format = """
 [](#9A348E)\
 $os\
@@ -18,11 +20,11 @@ $docker_context\
 [](fg:#06969A bg:#33658A)\
 $time\
 [ ](fg:#33658A)\
-$all[╰─](#9A348E)$character"""
+$all[╰─](fg:#9A348E)$character"""
 
 # Change the default prompt characters
 [character]
-success_symbol = "[❯](#9A348E)"
+success_symbol = "[❯](fg:#9A348E)"
 error_symbol = "[❯](238)"
 
 # Disable the blank line at the start of the prompt
@@ -48,7 +50,7 @@ Macos = " "
 Windows = " "
 
 [directory]
-style = "bg:#DA627D"
+style = "bg:#DA627D fg:#0D2618"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -73,20 +75,13 @@ format = '[ $symbol $context ]($style) $path'
 
 [git_branch]
 symbol = ""
-style = "bg:#FCA17D"
+style = "bg:#FCA17D fg:#0D2618"
 format = '[ $symbol $branch ]($style)'
 truncation_length = 35
 truncation_symbol = "…/"
 
-# [git_branch]
-# symbol = " "
-# format = "on [$symbol$branch]($style) "
-# truncation_length = 30
-# truncation_symbol = "…/"
-# style = "bold green"
-
 [git_status]
-style = "bg:#FCA17D"
+style = "bg:#FCA17D fg:#0D2618"
 format = '[$all_status$ahead_behind ]($style)'
 conflicted = "[](bg:#FCA17D fg:160)"
 # up_to_date = " "
@@ -96,7 +91,7 @@ ahead = "⇡${count}"
 behind = "⇣${count}"
 # stashed = " "
 modified = "[](bg:#FCA17D fg:160)"
-staged = '[++\($count\)](bg:#FCA17D fg:040)'
+staged = '[++\($count\)](bg:#FCA17D fg:#004D20)'
 # renamed = " "
 # deleted = " "
 
@@ -117,31 +112,31 @@ staged = '[++\($count\)](bg:#FCA17D fg:040)'
 
 [dotnet]
 symbol = " "
-style = "bg:#86BBD8"
+style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [golang]
 symbol = " "
-style = "bg:#86BBD8"
+style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [java]
 symbol = " "
-style = "bg:#86BBD8"
+style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#86BBD8"
+style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#86BBD8"
+style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
-time_format = "%R" # Hour:Minute Format
+time_format = "%T" # Hour:Minute:Second Format
 style = "bg:#33658A"
 format = '[  $time ]($style)'
