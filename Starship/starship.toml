@@ -21,6 +21,9 @@ $docker_context\
 [](fg:#06969A)\
 $all[╰─](fg:#9A348E)$character"""
 
+# Disable the blank line at the start of the prompt
+add_newline = false
+
 # Change the default prompt characters
 [character]
 success_symbol = "[❯](fg:#9A348E)"
@@ -70,7 +73,7 @@ truncation_symbol = "…/"
 [docker_context]
 symbol = " "
 style = "bg:#06969A"
-format = '[ $symbol $context ]($style) $path'
+format = '[ $symbol $context ]($style)'
 
 [git_branch]
 symbol = ""
