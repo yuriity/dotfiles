@@ -20,7 +20,7 @@ Before installing posh-git make sure the following prerequisites have been met.
 # NOTE: If the AllowPrerelease parameter is not recognized, update your version of PowerShellGet to >= 1.6 e.g.
 #       Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber
 
-$ PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
+$ PowerShellGet\Install-Module posh-git -Scope -AllowPrerelease CurrentUser -Force
 ```
 
 ## Using posh-git
@@ -35,3 +35,7 @@ To get the complete list of settings that can be configured use:
 ```bash
 $GitPromptSettings
 ```
+
+## Other stuff
+
+[PowerTab](https://github.com/jasonmarcher/PowerTab) is an extension of the PowerShell tab expansion feature.
