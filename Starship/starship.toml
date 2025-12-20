@@ -12,6 +12,7 @@ $git_status\
 [](fg:#FCA17D bg:#86BBD8)\
 $dotnet\
 $nodejs\
+$bun\
 $python\
 $golang\
 $java\
@@ -113,7 +114,21 @@ staged = '[++\($count\)](bg:#FCA17D fg:#004D20)'
 # deleted = " "
 
 [dotnet]
-symbol = " "
+symbol = ""
+style = "bg:#86BBD8 fg:#05018D"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#86BBD8 fg:#05018D"
+format = '[ $symbol ($version) ]($style)'
+
+[bun]
+symbol = "🍔"
+style = "bg:#86BBD8 fg:#05018D"
+format = '[ $symbol ($version) ]($style)'
+
+[python]
 style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
@@ -124,15 +139,6 @@ format = '[ $symbol ($version) ]($style)'
 
 [java]
 symbol = " "
-style = "bg:#86BBD8 fg:#05018D"
-format = '[ $symbol ($version) ]($style)'
-
-[nodejs]
-symbol = ""
-style = "bg:#86BBD8 fg:#05018D"
-format = '[ $symbol ($version) ]($style)'
-
-[python]
 style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
