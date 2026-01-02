@@ -133,12 +133,12 @@ style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [golang]
-symbol = " "
+symbol = ""
 style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [java]
-symbol = " "
+symbol = ""
 style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
