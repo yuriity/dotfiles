@@ -27,8 +27,8 @@ add_newline = false
 
 # Change the default prompt characters
 [character]
-success_symbol = "[❯](fg:#9A348E)"
-error_symbol = "[❯](238)"
+success_symbol = "[](fg:#9A348E)"
+error_symbol = "[](238)"
 
 # Disable the blank line at the start of the prompt
 # add_newline = true
@@ -49,8 +49,8 @@ style = "bg:#9A348E"
 disabled = false     # Disabled by default
 
 [os.symbols]
-Macos = " "
-Windows = " "
+Macos = " "
+Windows = " "
 
 [directory]
 style = "bg:#DA627D fg:#0D2618"
@@ -114,26 +114,30 @@ staged = '[++\($count\)](bg:#FCA17D fg:#004D20)'
 # deleted = " "
 
 [dotnet]
-symbol = ""
+#  
+symbol = ""
 style = "bg:#86BBD8 fg:#05018D"
+version_format = 'v${major}'
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
-symbol = ""
+symbol = " "
 style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [bun]
-symbol = "🍔"
+symbol = ""
 style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [python]
+symbol = ""
 style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
 [golang]
-symbol = ""
+#   󰟓
+symbol = ""
 style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
 
@@ -146,6 +150,10 @@ format = '[ $symbol ($version) ]($style)'
 symbol = ""
 style = "bg:#86BBD8 fg:#05018D"
 format = '[ $symbol ($version) ]($style)'
+
+[package]
+format = 'via [🎁 $version](208 bold) '
+disabled = true
 
 [time]
 disabled = true
