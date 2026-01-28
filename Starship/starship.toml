@@ -136,8 +136,9 @@ format = '[ $symbol ]($style)'
 [python]
 symbol = ""
 style = "bg:#86BBD8 fg:#05018D"
-# format = '[ $symbol ($version) ]($style)'
-format = '[ $symbol ]($style)'
+# format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = '[ $symbol (${version} )(\($virtualenv\)) ]($style)'
+# format = '[ $symbol ]($style)'
 
 [golang]
 #   󰟓
