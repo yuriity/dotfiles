@@ -51,6 +51,7 @@ disabled = false     # Disabled by default
 [os.symbols]
 Macos = " "
 Windows = " "
+Ubuntu = "  "
 
 [directory]
 style = "bg:#DA627D fg:#0D2618"
